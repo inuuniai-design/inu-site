@@ -305,3 +305,12 @@ dl.profile ul { margin: 0; padding-left: 1.2em; }
   dl.profile dt { border-bottom: 0; padding-bottom: 4px; }
   .nav { gap: 2px 14px; font-size: .9rem; }
 }
+
+/* ---------- photos ---------- */
+.photo, .gallery figure { position: relative; }
+.photo figcaption, .gallery figcaption { padding: 10px 14px; font-size: .88rem; color: var(--muted); background: var(--surface); line-height: 1.6; }
+.photo figcaption small, .gallery figcaption small { display: block; font-size: .74rem; opacity: .85; }
+.photo figcaption a, .gallery figcaption a { color: inherit; }
+.photo-badge { position: absolute; top: 10px; left: 10px; z-index: 1; font-size: .72rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: #3b3027; box-shadow: 0 1px 4px rgba(0, 0, 0, .12); }
+.gallery { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+.gallery img { aspect-ratio: 4 / 3; }
