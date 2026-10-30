@@ -314,3 +314,8 @@ dl.profile ul { margin: 0; padding-left: 1.2em; }
 .photo-badge { position: absolute; top: 10px; left: 10px; z-index: 1; font-size: .72rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: #3b3027; box-shadow: 0 1px 4px rgba(0, 0, 0, .12); }
 .gallery { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
 .gallery img { aspect-ratio: 4 / 3; }
+/* motion.js がボタンの動きを受け持つときは、CSS の hover の動きを止める */
+.motion-ready .btn { transition: none; }
+.motion-ready .btn:hover { transform: none; }
+/* 印刷するときは、まだスクロールで出てきていない部分も見えるようにする */
+@media print { main [style] { opacity: 1 !important; transform: none !important; } }
